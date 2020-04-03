@@ -1,7 +1,7 @@
 ---
-- name: "Install bmon"
+- name: "Install rsync"
   package:
-    pkg: "{{ install_bmon_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    pkg: "{{ install_rsync_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
     state: "present"
   tags:
-    - "bmon"
+    - "rsync"
