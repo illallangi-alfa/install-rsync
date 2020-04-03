@@ -1,0 +1,6 @@
+---
+install_bmon_packages:
+  debian: &debian
+    - "bmon"
+  debian_armv7l: *debian
+  debian_x86_64: *debian
